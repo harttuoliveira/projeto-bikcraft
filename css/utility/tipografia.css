@@ -41,3 +41,23 @@
 .font-1-xg {
   font: 600 4rem/1.125 "Poppins", sans-serif;
 }
+
+@media (max-width: 1200px) {
+  .font-1-xg {
+    font-size: 3rem;
+  }
+
+  .font-2-g, .font-2-g-b {
+    font-size: 1.125rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .font-1-xg {
+    font-size: 2rem;
+  }
+
+  .font-1-gg, .font-2-gg {
+    font-size: 1.5rem;
+  }
+}
