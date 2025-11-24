@@ -28,6 +28,10 @@
   font: 500 1.125rem/1.35 "Roboto", sans-serif;
 }
 
+.font-1-g, .font-1-g-b {
+  font: 400 1.5rem/1.5 "Poppins", sans-serif;
+}
+
 .font-2-g, .font-2-g-b {
   font: 400 1.5rem/1.35 "Roboto", sans-serif;
 }
