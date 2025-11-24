@@ -26,6 +26,11 @@
   cursor: pointer;
 }
 
+.perguntas dt:focus-visible {
+  outline: 2px solid var(--cor-p1);
+  outline-offset: 4px;
+}
+
 .perguntas dt::before {
   content: "";
   display: inline-block;
@@ -40,10 +45,10 @@
   width: 14px;
   height: 6px;
   background: url(../../img/icones/seta-abrir.svg) no-repeat;
-  transition: 0.2s;
+  transition: transform 0.2s ease;
 }
 
-.perguntas dt:hover::after {
+.perguntas dt.ativo::after {
   transform: rotate(180deg);
 }
 
@@ -51,6 +56,19 @@
   padding-left: 20px;
   padding-top: 16px;
   max-width: 80ch;
+}
+
+.js .perguntas dd {
+  padding: 0 0 0 20px;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.3s ease, opacity 0.2s ease, padding-top 0.2s ease;
+}
+
+.js .perguntas dd.ativo {
+  padding-top: 16px;
+  opacity: 1;
 }
 
 @media (max-width: 800px) {
