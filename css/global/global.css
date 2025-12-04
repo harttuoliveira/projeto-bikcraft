@@ -35,3 +35,7 @@ img {
 img[src$=".jpg"] {
   border-radius: 4px;
 }
+
+footer a:hover img {
+  filter: brightness(1) invert(0.3);
+}
